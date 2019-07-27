@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    height: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    flex:1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px 0;
+    background: none;
+    border: 2px #ECA1FE solid;
+    color: #ECA1FE;
+    transition: all 0.3s ease-in-out;
+}
+    
+button:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #B19FFF ;
+    border-color: #5271C4;
+    color: #5271C4;
+}
