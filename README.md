@@ -1,6 +1,8 @@
 # SkyList Components #
 
 ## Biblioteca de web components compativel com qualquer sistema web ##
+
+https://www.npmjs.com/package/@skylist/components
 ---------
 ## sky-loading-square ##
 componente de loading
