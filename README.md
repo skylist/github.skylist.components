@@ -4,9 +4,33 @@
 
 https://www.npmjs.com/package/@skylist/components
 ---------
-## sky-loading-square ##
-componente de loading
 
-|   atributo  |   padrão    |   tipo  | descrição                           |
-|------------:|:-----------:|:-------:|:------------------------------------|
-|   qtd       |   3         | number  | muda a quantidade de itens animados, são permitidos apenas valores entre 2 e 5 |
+## Quick Start
+instale os pacotes
+
+```sh
+$ npm install
+```
+ou
+```sh
+$ yarn
+```
+
+## Preview com storybook
+```sh
+$ npm start
+```
+ou
+```sh
+$ yarn start
+```
+
+## desenvolvimento
+para desenvolver, basta rodar os comandos em terminais diferentes
+```sh
+$ npm start
+```
+em outro terminal:
+```sh
+npm run build-watch
+```
