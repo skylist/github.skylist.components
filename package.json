@@ -1,13 +1,13 @@
 {
   "name": "@skylist/components",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Lib of web components",
   "main": "./dist/bundle.js",
   "scripts": {
     "build-watch": "webpack --watch",
     "start": "start-storybook",
     "build": "webpack",
-    "build-storybook":"build-storybook -c .storybook"
+    "build-storybook": "build-storybook -c .storybook"
   },
   "author": "SkyList - Matheus Pantoja",
   "license": "ISC",
