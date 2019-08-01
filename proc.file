@@ -1,1 +1,1 @@
-web: npm run build-storybook
+web: npm run heroku-build

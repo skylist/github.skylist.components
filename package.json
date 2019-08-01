@@ -7,7 +7,8 @@
     "build-watch": "webpack --watch",
     "start": "start-storybook",
     "build": "webpack",
-    "build-storybook": "build-storybook -c .storybook"
+    "build-storybook": "build-storybook -c .storybook",
+    "heroku-build": "build-storybook -s public"
   },
   "author": "SkyList - Matheus Pantoja",
   "license": "ISC",
