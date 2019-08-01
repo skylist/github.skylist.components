@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./dist/bundle.js"></script>
+</head>
+<body>
+
+    <sky-loading-spinner></sky-loading-spinner>
+
+    <label for='loading-spinner-color'>Color</label>
+    <input id='loading-spinner-color' type="text" placeholder="Color">
+
+    <script>
+        const colorChange = document.querySelector('#loading-spinner-color')
+        colorChange.addEventListener('keyup', ({target})=>{
+            const spinner = document.querySelector('sky-loading-spinner')
+            spinner.setAttribute('color', target.value)
+        })
+    </script>
+</body>
+</html>
