@@ -1,4 +1,4 @@
-import { configure } from '@storybook/html';
+import { configure } from '@storybook/polymer';
 
 function loadStories() {
   const req = require.context('../src', true, /\.stories\.js$/);

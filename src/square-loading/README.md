@@ -12,4 +12,5 @@
 
 |   atributo  |   default   |   type  |
 |------------:|:-----------:|:-------:|
-|   qtd       |   3         | number  |
+|   nunmber   |   3         | number  |
+|   color     |   #000      | string  |
