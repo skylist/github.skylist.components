@@ -9,17 +9,6 @@
 </head>
 <body>
 
-    <sky-loading-spinner></sky-loading-spinner>
-
-    <label for='loading-spinner-color'>Color</label>
-    <input id='loading-spinner-color' type="text" placeholder="Color">
-
-    <script>
-        const colorChange = document.querySelector('#loading-spinner-color')
-        colorChange.addEventListener('keyup', ({target})=>{
-            const spinner = document.querySelector('sky-loading-spinner')
-            spinner.setAttribute('color', target.value)
-        })
-    </script>
+    <sky-loading-square number='3'></sky-loading-square>
 </body>
 </html>

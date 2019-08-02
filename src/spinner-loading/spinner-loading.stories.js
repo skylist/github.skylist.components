@@ -1,11 +1,11 @@
-import { storiesOf } from '@storybook/html';
+import { storiesOf } from '@storybook/polymer';
 import { withKnobs, color, number } from "@storybook/addon-knobs/polymer";
 
-import '../../dist/bundle'
+import './index'
 
-storiesOf("Loading", module)
+storiesOf("sky-loading-spinner", module)
     .addDecorator(withKnobs)
-    .add('Spinner', ()=> {
+    .add('Loading', ()=> {
         const loading = document.createElement('sky-loading-spinner')
         loading.background = color('background', '#ffffff')
         loading.color = color('color','#cccccc')
@@ -13,5 +13,4 @@ storiesOf("Loading", module)
         loading.speed = number('speed', 2000)
         return loading
     })
-    
     
