@@ -5,7 +5,7 @@
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "start-storybook",
-    "build": "build-storybook -c .storybook -o public",
+    "build": "build-storybook -c .storybook -o ../public",
     "build-storybook": "build-storybook -c .storybook",
     "heroku-build": "build-storybook -c .storybook -o ../public"
   },
