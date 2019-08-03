@@ -16,21 +16,14 @@ ou
 $ yarn
 ```
 
-## Preview com storybook
+## desenvolvimento
+Para abrir o preview com Storybook com hot reload
 ```sh
 $ npm start
-```
-ou
-```sh
-$ yarn start
 ```
 
-## desenvolvimento
-para desenvolver, basta rodar os comandos em terminais diferentes
+ou
+
 ```sh
-$ npm start
-```
-em outro terminal:
-```sh
-npm run build-watch
+$ yarn start
 ```

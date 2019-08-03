@@ -4,7 +4,6 @@
   "description": "Lib of web components",
   "main": "./dist/bundle.js",
   "scripts": {
-    "build-watch": "webpack --watch",
     "start": "start-storybook",
     "build": "webpack",
     "build-storybook": "build-storybook -c .storybook",
