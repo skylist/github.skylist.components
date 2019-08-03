@@ -6,7 +6,6 @@
   "scripts": {
     "start": "start-storybook",
     "build": "build-storybook -c .storybook",
-    "build-storybook": "build-storybook -c .storybook",
     "heroku-build": "build-storybook -c .storybook"
   },
   "author": "SkyList - Matheus Pantoja",
