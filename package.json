@@ -6,11 +6,13 @@
   "scripts": {
     "start": "start-storybook",
     "build": "build-storybook -c .storybook -o static",
-    "heroku-build": "build-storybook -c .storybook -o static"
+    "heroku-build": "build-storybook -c .storybook -o static",
   },
   "author": "SkyList - Matheus Pantoja",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3",
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@polymer/lit-element": "^0.6.5",
