@@ -12,7 +12,11 @@ module.exports = {
             {
                 test:/\.css$/i,
                 use: ['to-string-loader', 'css-loader'],
-            }
+            },
+            {
+                test: /\.md$/i,
+                use: 'raw-loader',
+              },
         ]
     }
 }
