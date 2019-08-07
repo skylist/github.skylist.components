@@ -5,8 +5,8 @@
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "start-storybook",
-    "build": "build-storybook -c .storybook",
-    "heroku-build": "build-storybook -c .storybook"
+    "build": "build-storybook -c .storybook -o static",
+    "heroku-build": "build-storybook -c .storybook -o static"
   },
   "author": "SkyList - Matheus Pantoja",
   "license": "ISC",
