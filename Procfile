@@ -1,1 +1,1 @@
-web: node static/index.html
+web: npm run build
