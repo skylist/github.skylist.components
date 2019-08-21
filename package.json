@@ -5,14 +5,13 @@
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "start-storybook",
-    "build": "build-storybook -c .storybook -o static",
-    "heroku-build": "build-storybook -c .storybook -o static",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "heroku-build": "build-storybook -c .storybook -o static"
   },
   "author": "SkyList - Matheus Pantoja",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@polymer/lit-element": "^0.6.5",

@@ -1,0 +1,193 @@
+:host input {
+  display: flex;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;  
+}
+
+:host label {
+  display: flex;
+  align-items: center;
+}
+
+:host label .icon {
+  margin-top: 0;
+  margin-left: -24px;
+  margin-right: 8px;
+}
+
+:host label slot {
+  font-size: var(--font-size-paragraph2, 14px);
+  line-height: var(--font-line-height-paragraph2, 20px);
+  font-family: var(--font-family-rational, sans-serif);
+  font-weight: var(--font-weight-light, 300);
+  color: var(--color-primary-black, #322828);
+}
+
+:host label slot strong {
+  font-family: var(--font-family-rational, sans-serif);
+  font-weight: var(--font-weight-medium, 500);
+}
+
+:host .icon {
+  display: flex;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  border-radius: 100%;
+  margin-top: -24px;
+  justify-content: center;
+}
+
+:host input:checked+.icon:before{
+  display: flex;
+  align-self: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  content: '';
+}
+
+:host([large]) .icon,
+:host([large]) input {
+  width: 32px;
+  height: 32px;  
+}
+
+:host([large]) .icon {
+  margin-top: -32px;
+}
+
+:host([large]) label .icon {
+  margin-top: 0;
+  margin-left: -32px;
+  margin-right: 16px;
+}
+
+:host([large]) input:checked+.icon:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+:host(:hover) .icon {
+  border-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host(:hover) .icon:before {
+  background-color: var(--color-secondary-dawn-light, #B130A6);
+}
+
+:host(:hover) .icon {
+  border-color: var(--color-secondary-dawn-light, #B130A6);
+}
+
+:host input:checked+.icon {
+  border-color: var(--color-primary-dawn, #87027B);
+}
+
+:host input:checked+.icon:before {
+  background-color: var(--color-primary-dawn, #87027B);
+}
+
+:host .icon {
+  border-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host .icon:before {
+  background-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host([error]:hover) .icon,
+:host([error]) .icon {
+  border-color: var(--color-secondary-twilight-default, #B00000);  
+}
+
+:host([error]:hover) .icon:before,
+:host([error]) .icon:before {
+  background-color: var(--color-secondary-twilight-default, #B00000);
+}
+
+:host([disabled='true']) .icon,
+:host([disabled='true']:hover) .icon {
+  border-color: var(--color-secondary-grey-light, #D8D8D8);
+}
+
+:host([disabled='true']) .icon:before,
+:host([disabled='true']:hover) .icon:before {
+  background-color: var(--color-secondary-grey-light, #D8D8D8);
+}
+
+:host([disabled='true']) label slot {
+  color: var(--color-secondary-grey-light, #D8D8D8);
+}
+
+:host([dark]) label slot {
+  color: var(--color-primary-white, #FFFFFF);
+}
+
+:host([dark]) .icon {
+  border-color: var(--color-secondary-grey-light, #D8D8D8)
+}
+
+:host([dark]) .icon:before {
+  background-color: var(--color-secondary-grey-light, #D8D8D8)
+}
+
+:host([dark]:hover) .icon {
+  border-color: var(--color-secondary-daybreak-light, #5DD4E0);
+}
+
+:host([dark]) input:checked+.icon {
+  border-color: var(--color-primary-daybreak,#3CCBDA);
+}
+
+:host([dark]) input:checked+.icon:before {
+  background-color: var(--color-primary-daybreak,#3CCBDA);
+}
+
+:host([dark][error]) input:checked+.icon {
+  border-color: var(--color-secondary-twilight-light, #FF9898);
+}
+
+:host([dark][error]) input:checked+.icon:before {
+  background-color: var(--color-secondary-twilight-light, #FF9898);
+}
+
+:host([dark][error]:hover) .icon,
+:host([dark][error]) .icon {
+  border-color: var(--color-secondary-twilight-light, #FF9898);  
+}
+
+:host([dark][error]:hover) .icon:before,
+:host([dark][error]) .icon:before {
+  background-color: var(--color-secondary-twilight-light, #FF9898);
+}
+
+:host([disabled='true'][dark]) .icon,
+:host([disabled='true'][dark]:hover) .icon {
+  border-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host([disabled='true'][dark]) .icon:before,
+:host([disabled='true'][dark]:hover) .icon:before {
+  background-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host([disabled='true'][dark]) label slot {
+  color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host .icon {
+  border-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
+:host .icon:before {
+  background-color: var(--color-secondary-grey-dark, #9B9B9B);
+}
+
